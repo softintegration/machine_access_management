@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+        <record id="group_machine_access_user" model="res.groups">
+            <field name="name">Manage machine access</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+</data>
+</odoo>

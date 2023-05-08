@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="machine.access.type" id="type_vps">
+            <field name="name">VPS</field>
+            <field name="description">Virtual private server</field>
+        </record>
+        <record model="machine.access.type" id="type_on_premise_pm">
+            <field name="name">On-premise physical machine</field>
+            <field name="description">On-premise physical machine</field>
+        </record>
+        <record model="machine.access.type" id="type_on_premise_vm">
+            <field name="name">On-premise virtual machine</field>
+            <field name="description">On-premise virtual machine</field>
+        </record>
+
+        <record model="machine.access.service.type" id="service_ssh">
+            <field name="name">SSH</field>
+            <field name="description">SSH</field>
+        </record>
+
+        <record model="machine.access.service.type" id="service_odoo_erp">
+            <field name="name">Odoo ERP</field>
+            <field name="description">Odoo ERP</field>
+        </record>
+
+        <record model="machine.access.service.type" id="service_odoo_db">
+            <field name="name">Odoo Database super-admin</field>
+            <field name="description">Odoo Database super-admin</field>
+        </record>
+
+        <record model="machine.access.service.type" id="service_webmin">
+            <field name="name">Webmin</field>
+            <field name="description">Webmin</field>
+        </record>
+
+
+    </data>
+</odoo>

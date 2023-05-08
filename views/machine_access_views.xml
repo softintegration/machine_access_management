@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Top menu item -->
+    <menuitem id="machine_access_menu_root"
+              name="Machine access management"
+              web_icon="machine_access_management,static/description/icon.png"
+              active="True"
+              sequence="50"/>
+
+    <menuitem id="machine_access_menu"
+              name="Machine access"
+              parent="machine_access_management.machine_access_menu_root"
+              sequence="2"/>
+
+    <menuitem id="machine_access_settings"
+              name="Configuration"
+              parent="machine_access_management.machine_access_menu_root"
+              sequence="10"
+    />
+
+
+    <record id="machine_access_main_action" model="ir.actions.act_window">
+        <field name="name">Machine access</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">machine.access</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Machine access
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="machine_access_action_menu"
+              parent="machine_access_menu"
+              action="machine_access_management.machine_access_main_action"
+              sequence="1" groups="machine_access_management.group_machine_access_user"/>
+
+
+    <!-- Machine access Tree View -->
+    <record id="view_machine_access_tree" model="ir.ui.view">
+        <field name="name">view.machine.access.tree</field>
+        <field name="model">machine.access</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <tree string="Machine access" sample="1">
+                <header/>
+                <field name="name" readonly="1" decoration-bf="1"/>
+                <field name="machine_label"/>
+                <field name="machine_type" options="{'no_create_edit': True}"/>
+                <field name="ip_address"/>
+                <field name="cpu_info" optional="hide"/>
+                <field name="mem_info" optional="hide"/>
+                <field name="disk_info" optional="hide"/>
+                <field name="os_info" optional="hide"/>
+                <field name="access_tags" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Machine access Form View -->
+    <record id="view_machine_access_form" model="ir.ui.view">
+        <field name="name">view.machine.access.form</field>
+        <field name="model">machine.access</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group name="machine_access_header">
+                        <group>
+                            <field name="machine_label"/>
+                            <field name="ip_address"/>
+                            <field name="cpu_info"/>
+                            <field name="disk_info"/>
+                            <field name="access_tags" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                        </group>
+                        <group>
+                            <field name="machine_type" options="{'no_create_edit': True}"/>
+                            <field name="domain_name"/>
+                            <field name="mem_info"/>
+                            <field name="os_info"/>
+                        </group>
+                    </group>
+                    <div class="o_new-group o_new-group-big">Services</div>
+                    <group name="service_ids">
+                        <field name="service_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="service_type"/>
+                                <field name="username"/>
+                                <field name="password"/>
+                                <field name="port"/>
+                                <field name="note"/>
+                            </tree>
+                            <form>
+                                <sheet>
+                                    <group>
+                                        <field name="service_type"/>
+                                        <field name="username"/>
+                                        <field name="password"/>
+                                        <field name="port"/>
+                                        <field name="note"/>
+                                    </group>
+                                </sheet>
+                            </form>
+                        </field>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Machine access Search View -->
+    <record id="view_machine_access_search" model="ir.ui.view">
+        <field name="name">view.machine.access.search</field>
+        <field name="model">machine.access</field>
+        <field name="arch" type="xml">
+            <search string="Search Machine access">
+                <field name="name"/>
+                <field name="machine_label"/>
+                <field name="ip_address"/>
+                <field name="access_tags"/>
+                <separator/>
+            </search>
+        </field>
+    </record>
+
+
+    <record id="machine_access_type_main_action" model="ir.actions.act_window">
+        <field name="name">Machine type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">machine.access.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Machine type
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="machine_access_type_action_menu"
+              parent="machine_access_settings"
+              action="machine_access_management.machine_access_type_main_action"
+              sequence="10" groups="machine_access_management.group_machine_access_user"/>
+
+    <!-- Machine access type Tree View -->
+    <record id="view_machine_access_type_tree" model="ir.ui.view">
+        <field name="name">view.machine.access.type.tree</field>
+        <field name="model">machine.access.type</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <tree string="Machine type" sample="1">
+                <header/>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Machine access type Form View -->
+    <record id="view_machine_access_type_form" model="ir.ui.view">
+        <field name="name">view.machine.access.type.form</field>
+        <field name="model">machine.access.type</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <form string="Machine type">
+                <header/>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="machine_access_service_type_main_action" model="ir.actions.act_window">
+        <field name="name">Service type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">machine.access.service.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Service type
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="machine_access_service_type_action_menu"
+              parent="machine_access_settings"
+              action="machine_access_management.machine_access_service_type_main_action"
+              sequence="20" groups="machine_access_management.group_machine_access_user"/>
+
+    <!-- Machine access service type Tree View -->
+    <record id="view_machine_access_service_type_tree" model="ir.ui.view">
+        <field name="name">view.machine.access.service.type.tree</field>
+        <field name="model">machine.access.service.type</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <tree string="Service type" sample="1">
+                <header/>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Machine access service type Form View -->
+    <record id="view_machine_access_service_type_form" model="ir.ui.view">
+        <field name="name">view.machine.access.service.type.form</field>
+        <field name="model">machine.access.service.type</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <form string="Service type">
+                <header/>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

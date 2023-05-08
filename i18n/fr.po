@@ -1,0 +1,440 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* machine_access_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-08 15:07+0000\n"
+"PO-Revision-Date: 2023-05-08 15:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__cpu_info
+msgid "CPU"
+msgstr "CPU"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__color
+msgid "Color"
+msgstr "Couleur"
+
+#. module: machine_access_management
+#: model:ir.ui.menu,name:machine_access_management.machine_access_settings
+msgid "Configuration"
+msgstr "Paramètres"
+
+#. module: machine_access_management
+#: model_terms:ir.actions.act_window,help:machine_access_management.machine_access_main_action
+msgid "Create a new Machine access"
+msgstr "Créer un nouvel accès"
+
+#. module: machine_access_management
+#: model_terms:ir.actions.act_window,help:machine_access_management.machine_access_type_main_action
+msgid "Create a new Machine type"
+msgstr "Créer un nouveau type de machine"
+
+#. module: machine_access_management
+#: model_terms:ir.actions.act_window,help:machine_access_management.machine_access_service_type_main_action
+msgid "Create a new Service type"
+msgstr "Créer un nouveau type de service"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__create_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__create_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__create_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__create_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__create_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__create_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__create_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__create_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__description
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__description
+msgid "Description"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__disk_info
+msgid "Disk"
+msgstr "Disque"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__display_name
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__display_name
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__display_name
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__display_name
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__domain_name
+msgid "Domain name"
+msgstr "Nom de domaine"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__id
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__id
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__id
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__id
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__id
+msgid "ID"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__ip_address
+msgid "IP Address"
+msgstr "Adresse IP"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__message_needaction
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__machine_label
+msgid "Label"
+msgstr "Nom"
+
+#. module: machine_access_management
+#: model:ir.model.constraint,message:machine_access_management.constraint_machine_access_machine_label_uniq
+msgid "Label must be unique!"
+msgstr "Nom doit être unique"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access____last_update
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service____last_update
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type____last_update
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag____last_update
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__write_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__write_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__write_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__write_uid
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__write_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__write_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__write_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__write_date
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__machine_access_id
+msgid "Machine Access"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.actions.act_window,name:machine_access_management.machine_access_main_action
+#: model:ir.model,name:machine_access_management.model_machine_access
+#: model:ir.ui.menu,name:machine_access_management.machine_access_action_menu
+#: model:ir.ui.menu,name:machine_access_management.machine_access_menu
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_tree
+msgid "Machine access"
+msgstr "Accès machine"
+
+#. module: machine_access_management
+#: model:ir.ui.menu,name:machine_access_management.machine_access_menu_root
+msgid "Machine access management"
+msgstr "Accès machines"
+
+#. module: machine_access_management
+#: model:ir.model.constraint,message:machine_access_management.constraint_machine_access_name_uniq
+msgid "Machine access name must be unique!"
+msgstr "Le nom d'accès à la machine doit être unique"
+
+#. module: machine_access_management
+#: model:ir.actions.act_window,name:machine_access_management.machine_access_type_main_action
+#: model:ir.ui.menu,name:machine_access_management.machine_access_type_action_menu
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_type_form
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_type_tree
+msgid "Machine type"
+msgstr "Type machine"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: machine_access_management
+#: model:res.groups,name:machine_access_management.group_machine_access_user
+msgid "Manage machine access"
+msgstr "Gérer les accès des machines"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__mem_info
+msgid "Memory"
+msgstr "Mémoire"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service_type__name
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_tag__name
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_type__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__note
+msgid "Note/Useful data"
+msgstr "Remarque/Données utiles"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__os_info
+msgid "OS"
+msgstr "OS"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__password
+msgid "Password"
+msgstr "Mot de passe"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__port
+msgid "Port"
+msgstr "Port"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__name
+msgid "Reference"
+msgstr "Référence"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: machine_access_management
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_search
+msgid "Search Machine access"
+msgstr "Rechercher dans les accès
+
+#. module: machine_access_management
+#: model:ir.actions.act_window,name:machine_access_management.machine_access_service_type_main_action
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__service_type
+#: model:ir.ui.menu,name:machine_access_management.machine_access_service_type_action_menu
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_service_type_form
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_service_type_tree
+msgid "Service type"
+msgstr "Type de service"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__service_ids
+#: model_terms:ir.ui.view,arch_db:machine_access_management.view_machine_access_form
+msgid "Services"
+msgstr "Services"
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.constraint,message:machine_access_management.constraint_machine_access_tag_name_uniq
+msgid "Tag already exists!"
+msgstr "étiquette existe déjà"
+
+#. module: machine_access_management
+#: model:ir.model,name:machine_access_management.model_machine_access_tag
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__access_tags
+msgid "Tags"
+msgstr "Etiquettes"
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__machine_type
+msgid "Type"
+msgstr "Type"
+
+#. module: machine_access_management
+#: model:ir.model.fields,help:machine_access_management.field_machine_access__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model.fields,field_description:machine_access_management.field_machine_access_service__username
+msgid "Username"
+msgstr "Utilisateur"
+
+#. module: machine_access_management
+#: model:ir.model,name:machine_access_management.model_machine_access_service
+msgid "machine.access.service"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model,name:machine_access_management.model_machine_access_service_type
+msgid "machine.access.service.type"
+msgstr ""
+
+#. module: machine_access_management
+#: model:ir.model,name:machine_access_management.model_machine_access_type
+msgid "machine.access.type"
+msgstr ""
